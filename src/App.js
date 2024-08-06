@@ -1,14 +1,13 @@
-import { useState, useEffect } from "react";
-import { Router, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./component/Home";
 import Post from "./component/Post";
 
 function App() {
   return (
-    <Router>
+    <Routes>
       <Route path="/" Component={Home}></Route>
-      <Route path="/post/:id" Component={Post}></Route>
-    </Router>
+      <Route path="/posts/:id" Component={Post}></Route>
+    </Routes>
   );
 }
 
